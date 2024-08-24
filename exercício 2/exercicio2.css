@@ -1,0 +1,38 @@
+/* Flávia Glenda */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.paginas {
+    display: flex;
+    height: 100vh; 
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    text-align: center;
+}
+
+.left {
+    background-color: #bc3686;
+    flex: 0 0 20%; 
+}
+
+.main {
+    background-color: #3dba9f;
+    flex: 0 0 60%;
+}
+
+.right {
+    background-color: #527cd8;
+    flex: 0 0 20%; 
+}
+
+@media (max-width: 800px) {
+    .paginas {
+        flex-direction: column;
+    }
+
+    .left, .main, .right {
+        flex: 0 0 100%; 
+    }
+}
